@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { WelcomeModal } from "@/components/jumper";
+import { Button } from "./ui/button";
+import Link from "next/link";
 export default function Proposal() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
@@ -41,6 +43,9 @@ export default function Proposal() {
           <>
             <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
             <div className="text-4xl font-bold my-4">Ok yay!!!</div>
+            <Link href="/location">
+              <Button variant="link">lets pick a place, click me!</Button>
+            </Link>
           </>
         ) : (
           <>
