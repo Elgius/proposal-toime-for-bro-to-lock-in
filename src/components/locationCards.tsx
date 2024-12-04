@@ -6,7 +6,7 @@ import {
   CardContainer,
   CardItem,
 } from "@/components/ui/3dCardsNobodyAsked";
-import Link from "next/link";
+// import Link from "next/link";
 
 export function CardsOfLocation() {
   return (
@@ -35,7 +35,7 @@ export function CardsOfLocation() {
           />
         </CardItem>
         <div className="flex justify-between items-center mt-20">
-          <CardItem
+          {/* <CardItem
             translateZ={20}
             as={Link}
             href="https://twitter.com/mannupaaji"
@@ -43,7 +43,7 @@ export function CardsOfLocation() {
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
             lets go?
-          </CardItem>
+          </CardItem> */}
           <CardItem
             translateZ={20}
             as="button"
